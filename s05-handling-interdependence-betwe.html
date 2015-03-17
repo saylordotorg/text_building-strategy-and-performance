@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Handling Interdependence Between Resources</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s04-resources-and-bathtub-behavior.html"><img src="shared/images/batch-left.png"></a> <a href="s04-resources-and-bathtub-behavior.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-building-and-managing-the-stra.html">Next Chapter</a> <a href="s06-building-and-managing-the-stra.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="chapter" id="warren_1.0-ch04" version="5.0" lang="en">
+    <h1 class="title editable block">
+<span class="title-prefix">Chapter 4</span> Handling Interdependence Between Resources</h1>
+    <div class="section" id="warren_1.0-ch04_s00">
+        <h2 class="title editable block">Overview</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s00_p01">The way that resources increase or decrease through time is critical, and resources always rely on one another. Existing resources either enable growth in other resources or constrain it. This mutual reliance can even lead the whole system to collapse.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s00_p02">The next step is to show how these mechanisms make resources complementary and explore the implications of this interdependence over time. This chapter will do the following:</p>
+        <ul class="itemizedlist editable block" id="warren_1.0-ch04_s00_l01">
+            <li><strong class="emphasis bold"> show how resources can drive their own growth</strong></li>
+            <li>
+<strong class="emphasis bold"> explain how growing a resource depends on the availability of other resources</strong>, creating self-reinforcing feedback that can drive rapid growth or lead to collapse</li>
+            <li>
+<strong class="emphasis bold"> describe how having too little of one resource can constrain another’s growth but also</strong> protect against decline</li>
+            <li><strong class="emphasis bold"> highlight the impact of these interdependences on performance through time</strong></li>
+        </ul>
+    </div>
+</div>
+<div class="section" id="warren_1.0-ch04_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.1</span> Gaining and Maintaining Resources</h2>
+    <p class="para editable block" id="warren_1.0-ch04_s01_p01">So far we have learned the following:</p>
+    <ul class="itemizedlist editable block" id="warren_1.0-ch04_s01_l01">
+        <li>Understanding and managing performance through time is the key challenge for management (<a class="xref" href="warren_1.0-ch01#warren_1.0-ch01">Chapter 1 "Performance Through Time"</a>).</li>
+        <li>Performance depends on resources: items that fill and drain (<a class="xref" href="warren_1.0-ch02#warren_1.0-ch02">Chapter 2 "Resources: Vital Drivers of Performance"</a>).</li>
+        <li>The way that resources flow into and out of the organization, and from stage to stage, is critically important and difficult to manage (<a class="xref" href="warren_1.0-ch03#warren_1.0-ch03">Chapter 3 "Resources and Bathtub Behavior"</a>).</li>
+    </ul>
+    <p class="para editable block" id="warren_1.0-ch04_s01_p02">The next crucial question is, <strong class="emphasis bold">what drives the growth</strong> (<span class="margin_term"><a class="glossterm">inflow</a><span class="glossdef">The growth of or increase in resources.</span></span>) <strong class="emphasis bold">and decline</strong> (<span class="margin_term"><a class="glossterm">outflow</a><span class="glossdef">The reduction in or decline of resources.</span></span>) <strong class="emphasis bold">of resources</strong>?</p>
+    <p class="para editable block" id="warren_1.0-ch04_s01_p03">There are three factors moving resources into and out of your organization:</p>
+    <ol class="orderedlist editable block" id="warren_1.0-ch04_s01_l02">
+        <li>
+<strong class="emphasis bold">Your own decisions</strong>, for example, marketing spending, sales effort, firing staff, and research and development (R&amp;D) efforts</li>
+        <li>
+<strong class="emphasis bold">Outside forces</strong>, for example, changes in customers’ needs, shortages of suitable staff, price cuts by competitors, and increases in expected service levels</li>
+        <li>
+<strong class="emphasis bold">Resources already in place</strong>, for example, salespeople to win customers, service people to deliver service and retain clients, and research staff to develop new products.</li>
+    </ol>
+    <div class="section" id="warren_1.0-ch04_s01_s01">
+        <h2 class="title editable block">Decisions Affect Resource Flows</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s01_p01">In fact, most of your own decisions—at least those that are likely to affect performance into the future—work by affecting resource <em class="emphasis">flows</em>, either directly or indirectly. You recruit more salespeople to win customers faster, add service capacity to keep customers from leaving, take on engineers to develop products, dedicate human resource (HR) staff to hiring, and so on.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s01_p02">If we start training people today, for example, we do not <em class="emphasis">instantly</em> get better bottom-line performance. The training improves the overall skill of the group over whatever time it takes to cover everyone in the group. Only those people who have been trained can start to deliver improvements, and this takes time. The one impact we do see immediately, of course, is the extra cost! Consequently, it is all too common for organizations to decide on beneficial changes, only to abandon them because they do not see enough immediate benefit to continue. What often gets cut first when performance falters? Training and marketing!</p>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s01_p03">Let us look back at what happened to your restaurant over the past 12 months. <a class="xref" href="warren_1.0-ch03_s02#warren_1.0-ch03_s02_f03">Figure 3.6 "The Separate Flows of Customers Into and Out of Your Regular Customer Group"</a> showed the inflow and outflow of regular customers. The decisions involved were to increase marketing spending but then cut back later in the year (<a class="xref" href="#warren_1.0-ch04_s01_s01_f01">Figure 4.1 "Marketing Decisions Change the Inflow of Customers"</a>).</p>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s01_p04">Note that we are not looking to explain the impact of marketing on profits, not even on sales. The <em class="emphasis">immediate</em> effect is on the customer win rate, and we need to focus on the numbers: the <em class="emphasis">rate</em> of marketing spending and <em class="emphasis">how much</em> impact it had on the rate of winning new customers. It also seems that our marketing decisions are not quite enough to account for the customer win rate, since we had a trickle of new customers even when we were spending nothing.</p>
+        <div class="figure large editable block" id="warren_1.0-ch04_s01_s01_f01">
+            <p class="title"><span class="title-prefix">Figure 4.1</span> Marketing Decisions Change the Inflow of Customers</p>
+            <img src="section_05/74b2b845348082661631a0cac1abcbbd.jpg">
+        </div>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s01_p05">We must not forget that such a change in a resource flow is not the only consequence of our decisions. Many will have cost or revenue implications, too. In this case, marketing spending has an <em class="emphasis">immediate</em> impact on profits, as well as causing other changes (<a class="xref" href="#warren_1.0-ch04_s01_s01_f02">Figure 4.2 "The Impact of Changed Marketing Spending on Profits"</a>).</p>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s01_p06">When you increased spending in month 7, profits dropped by the amount you decided to spend. Profits grew quickly after you implemented this decision, so something else must have happened. But the <em class="emphasis">immediate</em> effect was a sharp drop: no delays or bathtubs filling in this part of the system, just simple arithmetic. The same applies to the decision in month 10 to <em class="emphasis">cut</em> marketing spending. The profit rate <em class="emphasis">immediately</em> jumps by the $3,000 per month cut in marketing. Again, however, something else happens soon after to wipe out that profit increase.</p>
+        <div class="figure large editable block" id="warren_1.0-ch04_s01_s01_f02">
+            <p class="title"><span class="title-prefix">Figure 4.2</span> The Impact of Changed Marketing Spending on Profits</p>
+            <img src="section_05/46a4a92aa5c5c91d045cb73c0c2b2f35.jpg">
+        </div>
+    </div>
+    <div class="section" id="warren_1.0-ch04_s01_s02">
+        <h2 class="title editable block">Outside Forces Affect Resource Flows</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s02_p01">Competitors and other factors also affect the flows of resources into and out of our business. Competitors can even <em class="emphasis">help</em> us develop resources, as we will see in <a class="xref" href="warren_1.0-ch07#warren_1.0-ch07">Chapter 7 "Managing Rivalry for Customers and Other Resources"</a>. External influences are generally looked at under four categories:</p>
+        <ol class="orderedlist editable block" id="warren_1.0-ch04_s01_s02_l01">
+            <li>
+<strong class="emphasis bold">Political</strong> changes, such as privatization and deregulation, open up entire industries. Some may even act directly on specific aspects of performance, such as price regulation in utility markets.</li>
+            <li>
+<strong class="emphasis bold">Economic</strong> changes constantly bring new customer groups into existence. Fast-developing economies can create conditions in which the inflow to the “potential customer” pool grows extremely rapidly. The opposite occurs when economies contract, as many companies experienced with the banking-led recession of 2008.</li>
+            <li>
+<strong class="emphasis bold">Social</strong> changes drive the migration of consumers, employees, and others into and out of the resource base of different industries. Simple demographic changes bring new young consumers into a potential market each year and of course take them out again as they age.</li>
+            <li>
+<strong class="emphasis bold">Technological</strong> progress largely manifests itself in two ways: changing the functionality of products and reducing the unit cost of offering them. Growing Internet penetration helped Alibaba.com but hurt Blockbuster Inc. in our examples from <a class="xref" href="warren_1.0-ch01#warren_1.0-ch01">Chapter 1 "Performance Through Time"</a>.</li>
+        </ol>
+        <div class="callout editable block" id="warren_1.0-ch04_s01_s02_n01">
+            <h3 class="title">Doing It Right: Stick to the Correct Language</h3>
+            <p class="para" id="warren_1.0-ch04_s01_s02_p02">We are often sloppy in our use of language about business, and since we have never been especially conscious of the bathtub behavior of resources there is a particular problem about <em class="emphasis">levels</em> and <em class="emphasis">rates</em>. We might discuss what we can do to increase the “level” of profits, say, or debate whether the “level” of marketing spending is sustainable. Wrong! Profits and marketing spending are both <em class="emphasis">rates</em> at which money is being made or spent; their units are dollars <em class="emphasis">per month</em>. The only factors that should properly be referred to as “levels” are resources, plus that rather special factor, price.</p>
+            <p class="para" id="warren_1.0-ch04_s01_s02_p03">This may seem picky, but so long as we are inaccurate in the language we use, we will continue to misunderstand what is going on. And if we misunderstand, we will misdecide!</p>
+        </div>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s02_p04">The systematic examination of these forces is known as PEST analysis. While the concept of PEST influences sounds right, that is not sufficient for strategy development. Once again, numbers matter. You need to understand the <em class="emphasis">scale</em> and <em class="emphasis">timing</em> of the changes affecting your future. Imagine you run a company producing electronic goods, and you face an economic downturn. You need to know roughly how severe it will be, at what rate it will remove potential consumers from your pool of resources, and to what level.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s02_p05">In addition, factors changing <em class="emphasis">other</em> markets can have powerful spin-off effects. TV viewing has fallen as viewers switched their time to online activities, with damaging consequences for advertising revenues. Internet usage in Europe has in turn been depleted by the time people spend sending text messages by mobile phone. These are both examples of quantifiable dynamics—that is, rates of change through time—concerning the influence of substitute products that feature in standard industry forces approaches to strategy (<em class="emphasis">see</em> <a class="xref" href="warren_1.0-ch01#warren_1.0-ch01">Chapter 1 "Performance Through Time"</a>).</p>
+    </div>
+    <div class="section" id="warren_1.0-ch04_s01_s03">
+        <h2 class="title editable block">Resources Determine Each Other’s Growth</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s03_p01">The most important point about what drives resource flows, however, is that current levels of resources determine the rate at which other resources fill up or drain away. This is the mechanism for which the system dynamics method is ideally suited (Sterman, 2000, chap. 8).</p>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s03_p02">This is the reality of how resources work together, creating a system that can either perform strongly or constrain its own development. Interdependence can even bring about an organization’s self-destruction. Since we know that performance depends on resources, and that only flows of resource can alter these quantities through time, it follows that the <em class="emphasis">only</em> means by which management decisions can change your resources through time is by influencing what happens to the inflows and outflows.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s03_p03">However, as <a class="xref" href="warren_1.0-ch02#warren_1.0-ch02">Chapter 2 "Resources: Vital Drivers of Performance"</a> highlighted, you cannot build any resource without using resources already in place. This interdependence has two implications:</p>
+        <ol class="orderedlist editable block" id="warren_1.0-ch04_s01_s03_l01">
+            <li>The more of a resource you <em class="emphasis">currently</em> have, the faster others can grow. (It is even possible for a resource to generate its own growth, as when, for example, customers recommend their friends become customers.)</li>
+            <li>Conversely, having too little of a resource right now can slow or stop the growth of other resources. If this shortage is too severe, it can even cause other resources to be lost, which is where self-destruction can arise.</li>
+        </ol>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s03_p04">There are many examples of this principle:</p>
+        <ul class="itemizedlist editable block" id="warren_1.0-ch04_s01_s03_l02">
+            <li>The more salespeople you have, the faster you can win new customers.</li>
+            <li>The more development engineers you have, the faster you can improve the range and quality of your products.</li>
+            <li>The more donors a charity has, the faster it can acquire the cash it needs.</li>
+            <li>The more good clients a professional firm has, the faster it can win the best staff.</li>
+        </ul>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s03_p05">In the cases listed above, if you had none of the first resource, the second would not grow at all unless some <em class="emphasis">other</em> resource could replace it. If you have no salespeople, for example, you will need agents, a Web site, or some other alternative to capture customers. If a charity has no donors, it will need government funding or some kind of endowment to carry on its work.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s01_s03_p06">So how does a new business ever get started? It turns out that entrepreneurs too must have <em class="emphasis">some</em> stock of experience, contacts, and personal credibility to allow them to raise cash and hire their first staff. (Experience and credibility are intangible resources, which we will look at in <a class="xref" href="warren_1.0-ch08#warren_1.0-ch08">Chapter 8 "Intangible Resources and Capabilities"</a>.)</p>
+    </div>
+</div>
+<div class="section" id="warren_1.0-ch04_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.2</span> Reinforcing Feedback</h2>
+    <div class="section" id="warren_1.0-ch04_s02_s01">
+        <h2 class="title editable block">Resources Can Stimulate Their Own Growth</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s01_p01">The simplest case of mutual support is when a resource drives <em class="emphasis">its own</em> growth. This process can be seen in an everyday situation: cash and interest. The more cash you have saved, the faster more cash is added to it. Another obvious case is word of mouth among consumers. Our basic principle of <span class="margin_term"><a class="glossterm">reinforcing feedback</a><span class="glossdef">Current levels of resources that determine the rate at which other resources increase or decrease.</span></span> still applies: The <em class="emphasis">more</em> consumers there are, the <em class="emphasis">faster</em> they can win new ones (provided, that is, there are plenty of potential consumers left to be won).</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s01_p02">This is much more than a qualitative notion; as we keep emphasizing, <em class="emphasis">numbers matter and can</em> be worked out. <a class="xref" href="#warren_1.0-ch04_s02_s01_f01">Figure 4.3 "The Arithmetic of Reinforcing Growth From Word of Mouth"</a> takes us back to the start of <a class="xref" href="warren_1.0-ch02#warren_1.0-ch02">Chapter 2 "Resources: Vital Drivers of Performance"</a> and the simple customer stock at your restaurant. Let us imagine this time, however, that there is no loss of customers at all. In fact, you are winning more, thanks to the positive word of mouth from your existing clientele. Every 10 customers you have leads to you winning 1 new customer every month. Starting with 500, you win 50 during January. February then starts with 550, so that month you win 55, and so on.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s01_p03">You can see just how powerful reinforcing growth can be. By the end of the year the business is growing at almost three times the rate it was at the start. This may seem an astonishing and unrealistic rate of development, but it is very common indeed—look back at Alibaba.com in <a class="xref" href="warren_1.0-ch01#warren_1.0-ch01">Chapter 1 "Performance Through Time"</a>, or think how quickly Skype took off. The reason it seems unusual is that we do not often experience it ourselves, and other organizations we see around us may be too small to be noticed while the process is in full swing.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s01_p04">It seems, though, that apart from cash and people-based resources, there are few other examples that are capable of this self-replicating behavior. This is because most other resources are inanimate and just sit there unless we do something with them. So we need to turn our attention now to the way one resource drives growth in others.</p>
+        <div class="figure large editable block" id="warren_1.0-ch04_s02_s01_f01">
+            <p class="title"><span class="title-prefix">Figure 4.3</span> The Arithmetic of Reinforcing Growth From Word of Mouth</p>
+            <img src="section_05/b58ae263a420f82f623f624e870e633e.jpg">
+        </div>
+    </div>
+    <div class="section" id="warren_1.0-ch04_s02_s02">
+        <h2 class="title editable block">How Existing Resources Drive Growth in Others</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s02_p01">Consider the example of the consumer brand introduced in <a class="xref" href="warren_1.0-ch03#warren_1.0-ch03">Chapter 3 "Resources and Bathtub Behavior"</a>. Building awareness and interest in a brand is essential, but if we actually want to <em class="emphasis">sell</em> anything, we have to get stores to stock it. A new brand thus needs to drive the <em class="emphasis">inflow</em> to the resource of stores stocking the brand. What other resources are required to achieve this?</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s02_p02">First, we need consumers who want to buy the product. Retailers will not stock a product that is unlikely to generate profits for their stores, and these profits will only arise if consumers are likely to buy. A stock of interested consumers is not enough. Retailers need to know about the product and its potential profitability and must be constantly reminded of its attractiveness relative to other uses they might have for their shelf space. This requires a sales force. In this case, then, <em class="emphasis">two</em> resources are required: consumers and a sales force. If either is missing, stores will not be won. <a class="xref" href="#warren_1.0-ch04_s02_s02_f01">Figure 4.4 "Growth in the Number of Stores Stocking a Brand Depends on Sales Force and Consumers"</a> shows how these two resources drive growth in stores.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s02_p03">This may seem a daunting mix of numbers to get your head around, so let us think through how a product manager might estimate these numbers, based on either experience with previous brands or from seeing what competitors have accomplished.</p>
+        <div class="figure large editable block" id="warren_1.0-ch04_s02_s02_f01">
+            <p class="title"><span class="title-prefix">Figure 4.4</span> Growth in the Number of Stores Stocking a Brand Depends on Sales Force and Consumers</p>
+            <img src="section_05/800300421e0faf5e8757a33b0ec34561.jpg">
+        </div>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s02_p04">Our 50 salespeople can each make about 100 calls per month; that is 5,000 calls per month in total. However, it takes several calls to persuade a store that the brand is attractive, so perhaps only one call in four might be expected to achieve a sale. At first, so few consumers want the product that stores do not see much profit to be made, so sales calls are not successful at all. As consumer demand grows, the rate of sales success climbs.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s02_p05">Later, stores are won increasingly slowly because we are running out of stores to win. <a class="xref" href="#warren_1.0-ch04_s02_s02_f01">Figure 4.4 "Growth in the Number of Stores Stocking a Brand Depends on Sales Force and Consumers"</a> is therefore incomplete; we need to see the falling stock of potential stores as well, as shown in <a class="xref" href="#warren_1.0-ch04_s02_s02_f02">Figure 4.5 "Limited Potential Slows Growth in Stores Stocking the Brand"</a>.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s02_p06">Running out of potential stores is not the only reason for the limited win rate, however. The product manager needs to go through a few steps in order to estimate this win rate over the 2 years of the product launch (<a class="xref" href="#warren_1.0-ch04_s02_s02_f03">Figure 4.6 "Estimating Sales Force Success Over Time"</a>).</p>
+        <ul class="itemizedlist editable block" id="warren_1.0-ch04_s02_s02_l01">
+            <li>The <em class="emphasis">horizontal solid line</em> shows the maximum that could be achieved if all sales calls contributed to winning stores and every store found the product sufficiently profitable to stock.</li>
+            <li>The <em class="emphasis">solid curve</em> grows toward the maximum store win rate as our advertising gradually reaches the consumers whose demand makes the product desirable to stores.</li>
+            <li>Unfortunately, by the time we get close to this maximum rate, our salespeople are busy looking after existing stores <em class="emphasis">(dashed line)</em>.</li>
+            <li>Finally, as the remaining potential stores become scarcer, the win rate is reduced still further <em class="emphasis">(dotted line)</em>.</li>
+        </ul>
+        <div class="figure large editable block" id="warren_1.0-ch04_s02_s02_f02">
+            <p class="title"><span class="title-prefix">Figure 4.5</span> Limited Potential Slows Growth in Stores Stocking the Brand</p>
+            <img src="section_05/75562be63827198b71892d7cb17c19a5.jpg">
+        </div>
+        <div class="figure large editable block" id="warren_1.0-ch04_s02_s02_f03">
+            <p class="title"><span class="title-prefix">Figure 4.6</span> Estimating Sales Force Success Over Time</p>
+            <img src="section_05/5751dbff94ec62ceeeb5823b53814988.jpg">
+        </div>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s02_p07">The product manager can use the same process to estimate how rapidly consumers might be made aware of the brand. Two factors drive awareness: the firm’s own advertising expenditures and the brand’s presence in stores.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s02_p08">We now have some circularity in our reasoning. Growth in consumer awareness depends in part on the resource of stores, and growth in stores depends on the number of consumers. Putting these two together gives us a precise picture of what we mean when we say that our resources are complementary.</p>
+        <div class="callout editable block" id="warren_1.0-ch04_s02_s02_n01">
+            <h3 class="title">Doing It Right: Using Connecting Arrows</h3>
+            <p class="para" id="warren_1.0-ch04_s02_s02_p09">As we have emphasized before, the connecting arrows in these diagrams mean much more than some vague relationship between one item and another. They mean that you can estimate the value of an item at any time if you know the values of all the factors linked into it with arrows. Adding the arrow from “Potential stores” to “New stores stocking the brand/month” in <a class="xref" href="#warren_1.0-ch04_s02_s02_f02">Figure 4.5 "Limited Potential Slows Growth in Stores Stocking the Brand"</a> is therefore critical: You cannot estimate the rate of new stores without knowing the potential.</p>
+        </div>
+    </div>
+    <div class="section" id="warren_1.0-ch04_s02_s03">
+        <h2 class="title editable block">Finding the Drivers of Resource Flow Rates</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s03_p01">In the case of winning stores for a brand, it is relatively easy to identify and confirm the main factors in the win rate: namely, stores that will profit from the brand, the number of salespeople, and available stores. The explanations are not always so clear, however, so you will need to discuss with colleagues the factors most likely to drive a flow.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s03_p02">Imagine that staff turnover is causing you concern. There may be many reasons for this. How have your salaries changed, as well as those offered by your competitors? Has there been a change in the number of other job opportunities? Have competitors been increasing their hiring efforts? Has there been a change in your employees’ workload?</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s03_p03">It is possible that by putting the history charts for these items around the flow you want to explain (staff lost per month), you will easily see what has been happening and why. However, it may be necessary to go further. One place to start is to ask people why they chose to act as they did. In this case, exit interviews will provide some information on why staff turnover is happening.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s03_p04">It may be that you will need to use statistical methods to see if your expected drivers really do explain the resource flow rate. <strong class="emphasis bold">Beware!</strong> The accumulating behavior of resources makes it unsafe to use correlation to explain resource levels. Remember that today’s customers are precisely the sum of all you have ever won minus all you have ever lost, so no <em class="emphasis">other</em> causal explanation can be meaningful, however good the correlation may seem to be.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s03_p05">However, you <em class="emphasis">can</em> safely use correlation to confirm possible causes of resource flow rates. One retail bank found an astonishingly close relationship between certain factors and the rate at which any branch was likely to see customers closing their accounts. Among these strong causes was the bank’s history of making mistakes with customers’ accounts.</p>
+    </div>
+    <div class="section" id="warren_1.0-ch04_s02_s04">
+        <h2 class="title editable block">Limits and Pitfalls With Reinforcing Feedback</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s04_p01">As long as the growth rate continues, this self-reinforcing mechanism generates positive expansion. In the absence of any constraints, this growth will be exponential, increasing by the same <em class="emphasis">proportion</em> in each period. This is clearly a favorable situation for any firm to create, but there are three precautions to note:</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s04_p02"><strong class="emphasis bold">Reinforcing growth is not free</strong>. Something has to create the resource in the first place. In our brand example, this kick start came from the advertising, without which nothing would have happened. Salespeople can only persuade stores to stock the brand if consumers are interested. In practice, salespeople might conceivably persuade stores to take a product on the promise that consumers <em class="emphasis">will</em> become interested, even if they are not yet. But this relies on the reputation and credibility of the sales force—another intangible resource that has to be built. There is no free lunch!</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s04_p03"><strong class="emphasis bold">Reinforcing growth cannot continue indefinitely</strong>. Growth will inevitably come up against limits, either external (no more customers to win) or internal (not enough capacity to supply new customers). Even apparently unstoppable firms like McDonald’s and Coca-Cola hit the limit at some point, although that limit can be very high indeed.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s04_p04"><strong class="emphasis bold">Reinforcing feedback is capable of driving collapse</strong>. This problem arises when a decline in one resource leads to another resource draining away. This may in turn mean lower marketing spending, more people leaving the business to go to competitors, damage to the firm’s reputation, and possibly other related problems. In essence, the difficulties facing the business escalate and reinforce each other.</p>
+    </div>
+    <div class="section" id="warren_1.0-ch04_s02_s05">
+        <h2 class="title editable block">How Interdependence Causes Collapse</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s05_p01">Organizations that rely on professional staff run the risk of self-reinforcing collapse. Examples arise in both businesses and public services: lawyers in a legal firm, information technology (IT) department staff, hospital nurses, police officers, and so on. Collapse happens through a sequence of events. Staff can initially cope with the demands made on them while their workload remains constant. However, this group gradually depletes through normal staff turnover. As numbers decline, the pressure on those who remain increases, leading to further turnover and yet more pressure.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s05_p02">In such cases, the system needs at least a temporary reprieve from the pressure to arrest the loss of staff. This can come from two principal sources: using temporary staff such as contractors, or reducing the workload, either by turning work away or simplifying what is done. These fixes come with their own dangers. Contract staff can actually make matters worse by needing guidance from the already pressured staff and by further demoralizing them. Turning work away may be advisable, but it can be an uphill struggle to persuade managers to do this when they are already facing business collapse.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s05_p03">Work pressure is not the only trigger for collapse. One consulting firm serving the finance industry lost just a few key clients. With less rewarding projects to work on, and with their professional reputation to worry about, key staff resigned and moved to competing firms. This loss of key consultants caused still faster loss of clients, some of whom actually moved with the consultants to the same competitor! And so the process continued until the firm effectively collapsed.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s05_p04">Critical to solving this problem is to decide quickly <em class="emphasis">what to do, when, and how much</em>. Diagrams like those in <a class="xref" href="#warren_1.0-ch04_s02_s02_f01">Figure 4.4 "Growth in the Number of Stores Stocking a Brand Depends on Sales Force and Consumers"</a> and <a class="xref" href="#warren_1.0-ch04_s02_s02_f02">Figure 4.5 "Limited Potential Slows Growth in Stores Stocking the Brand"</a> clarify the problem and shed light on the path out of trouble. They also provide a map of progress as the solution develops.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s05_p05">It is better, of course, to have a plan for solving these troubles <em class="emphasis">before</em> they ever arise. But best of all is to have a mutually supporting set of resources whose interdependence is so positively embedded that the risk of a complete collapse is always remote.</p>
+    </div>
+    <div class="section" id="warren_1.0-ch04_s02_s06">
+        <h2 class="title editable block">Checking for Reinforcing Feedback</h2>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s06_p01">To see if your situation will reinforce growth or decline among one or more of your resources, the question to ask is, <strong class="emphasis bold">If this resource grows (or declines), will it have consequences that lead to further growth (or decline)</strong>?</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s06_p02">We know these mechanisms as virtuous or vicious cycles. To find out, sketch the resources, flows, and intervening factors, and work through the story.</p>
+        <p class="para editable block" id="warren_1.0-ch04_s02_s06_p03"><a class="xref" href="#warren_1.0-ch04_s03_f01">Figure 4.7 "Checking for Self-Reinforcing Growth and Decline Among Interdependent Resources"</a> tells the story for our consumer brand. Starting at the bottom left, if the number of consumers increases, the potential profit available to stores increases, causing more to stock the product. As it becomes more visible, additional consumers are won more quickly. However, do not forget the self-limiting effect that comes from running out of both resources.</p>
+        <div class="figure large editable block" id="warren_1.0-ch04_s03_f01">
+            <p class="title"><span class="title-prefix">Figure 4.7</span> Checking for Self-Reinforcing Growth and Decline Among Interdependent Resources</p>
+            <img src="section_05/325a61fccd943d02a5cfa5af5bab8795.jpg">
+        </div>
+    </div>
+</div>
+<div class="section" id="warren_1.0-ch04_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">4.3</span> How Growth Is Constrained</h2>
+    <p class="para editable block" id="warren_1.0-ch04_s03_p01">We now return to the other class of interdependence between resources, where an inadequate quantity of one resource slows and stops the growth of others. We can illustrate this by returning to the example of your restaurant.</p>
+    <p class="para editable block" id="warren_1.0-ch04_s03_p02"><a class="xref" href="warren_1.0-ch03_s02#warren_1.0-ch03_s02_f01">Figure 3.4 "How Changing Customer Numbers Drives Performance Over Time (for clarity, some items are not shown)"</a> showed a slowdown in customer growth, which even your strong marketing efforts failed to increase for more than a short time. <a class="xref" href="warren_1.0-ch03_s02#warren_1.0-ch03_s02_f03">Figure 3.6 "The Separate Flows of Customers Into and Out of Your Regular Customer Group"</a> explained separately the inflows and outflows that led to this. The questions we are left with are (a) Why did your customer growth stall in the early months? and (b) Why did customers leave in such high numbers from August through November? The clue lies in what happened to staff numbers during the year: nothing! You had 20 staff members throughout.</p>
+    <p class="para editable block" id="warren_1.0-ch04_s03_p03">Customer numbers were fairly stable until you did your big marketing push, although by June you were losing nearly as many customers each month as you were gaining. It seems that your staff were at the limit of their ability to cope. This is borne out by the information on customer service quality shown in <a class="xref" href="#warren_1.0-ch04_s03_f02">Figure 4.8 "The History of Service Quality and Customer Losses"</a>. When service quality was high, customer losses were low, but when service quality took a dive, customer losses shot up.</p>
+    <p class="para editable block" id="warren_1.0-ch04_s03_p04">Data on service quality, by the way, are not hard to estimate, even if you do not research them scientifically. Staff tips, complaints, and customer comment cards all offer simple information from which to estimate service quality. The resulting numbers may not be precise, but they are good enough to explain what’s happening and guide corrective action.</p>
+    <p class="para editable block" id="warren_1.0-ch04_s03_p05">So now we can pursue the causal linkages and ask <em class="emphasis">why</em> service quality suffered. It seems your staff could only cope with the 4,000 meals per month bought by your original 500 customers. When sales jumped to well over 5,500 per month thanks to your marketing efforts, service quality dropped sharply: Your resources were badly out of balance.</p>
+    <p class="para editable block" id="warren_1.0-ch04_s03_p06">If we connect parts of <a class="xref" href="warren_1.0-ch03_s02#warren_1.0-ch03_s02_f02">Figure 3.5 "The Net Flow of Customers Into and Out of Your Regular Customer Group"</a> with <a class="xref" href="#warren_1.0-ch04_s03_f02">Figure 4.8 "The History of Service Quality and Customer Losses"</a>, we can see how this story played out (<a class="xref" href="#warren_1.0-ch04_s03_f03">Figure 4.9 "Why Service Quality Suffered Then Recovered"</a>) and explain what happened to your restaurant over the past year.</p>
+    <ul class="itemizedlist editable block" id="warren_1.0-ch04_s03_l01">
+        <li>Early on, a small number of new customers were arriving in your restaurant every month.</li>
+        <li>By the middle of the year, service quality had dropped a little—just enough to put some customers off (the small outflow rate shown in months 4 to 6).</li>
+        <li>Your marketing campaign in July brought in a rapid flow of new customers: up to 170 per month.</li>
+        <li>But your staff could not cope, and customers started leaving more rapidly.</li>
+        <li>In a short time, customer losses caused by poor service matched the fast rate of customers brought in by your marketing.</li>
+        <li>When you gave up the marketing effort, customer losses continued until they reached a level that where your staff could cope.</li>
+    </ul>
+    <div class="figure large editable block" id="warren_1.0-ch04_s03_f02">
+        <p class="title"><span class="title-prefix">Figure 4.8</span> The History of Service Quality and Customer Losses</p>
+        <img src="section_05/82ff9557edf6cb15c1815114fad9f9a4.jpg">
+    </div>
+    <p class="para editable block" id="warren_1.0-ch04_s03_p07">There are always limits to how far this cycle of reinforcing growth can go. Balancing mechanisms set in at some point: either you run out of potential resource or you run up against constraints caused by finite levels of <em class="emphasis">other</em> resources. Such <span class="margin_term"><a class="glossterm">balancing feedback</a><span class="glossdef">Mechanisms that, when detected and managed, can reverse the restrictions on growth or the potential for collapse within an organization.</span></span> structures can also be discovered by tracing back what is causing any resource flow to run at the rate it is. Detecting and managing these balancing effects can remove brakes on growth and protect organizations against overshoot or runaway collapse.</p>
+    <div class="figure large editable block" id="warren_1.0-ch04_s03_f03">
+        <p class="title"><span class="title-prefix">Figure 4.9</span> Why Service Quality Suffered Then Recovered</p>
+        <img src="section_05/60209bafd9f037ec714eda46f4c281c0.jpg">
+    </div>
+    <div class="callout editable block" id="warren_1.0-ch04_s03_n01">
+        <h3 class="title">Action Checklist: Understanding and Leveraging Interdependence</h3>
+        <p class="para" id="warren_1.0-ch04_s03_p08">Here are some tips for analyzing the interdependence between resources and using your resulting understanding to manage their development:</p>
+        <ul class="itemizedlist" id="warren_1.0-ch04_s03_l02">
+            <li>Start with a chart of the history of a resource whose growth you want to understand and control.</li>
+            <li>Identify, separately, the history of its inflows and outflows. You may have to do some investigation and reasoning. If, for example, you know your historic staff numbers, the change from month to month is the <em class="emphasis">net</em> inflow. You may not know the loss rate. However, you <em class="emphasis">may</em> know the hiring rate; in which case the loss rate is the difference between this hiring history and the history of net staff changes.</li>
+            <li>The key variables you now want to explain are these separate inflows and outflows.</li>
+            <li>Discuss the most likely factors driving a flow and find or estimate how these have changed over the same history. How many new staff did you <em class="emphasis">try</em> to hire month by month, and how many did you succeed in hiring? (Target hiring is clearly likely to influence actual hiring!) How have you changed starting salaries, for example, and how have your competitors’ starting salaries moved?</li>
+        </ul>
+        <p class="para" id="warren_1.0-ch04_s03_p09">It is possible that putting the history charts for these items around the flow you want to explain will clarify sufficiently what has been happening and why. But it may be necessary to go further:</p>
+        <ul class="itemizedlist" id="warren_1.0-ch04_s03_l03">
+            <li>Use statistical methods to see if your proposed explanations actually explain the resource flow rate.</li>
+            <li>If your initial list of causes does not seem to explain how resource flows have changed, go back and investigate what might be missing.</li>
+            <li>When you are reasonably confident in your explanations for the resource flow you want to manage, work back to explanations for each of these factors in turn. Staff pressure, for example, will reflect total workloads divided by staff available.</li>
+        </ul>
+        <p class="para" id="warren_1.0-ch04_s03_p10">Eventually, you will get back to <em class="emphasis">existing</em> resources, and you will have completed the chain of interdependence. Staff turnover will perhaps be explained by current number of customers (driving workload) and existing number of staff. You can now work around all these explanations for the resource flow with your colleagues and assess the likely effectiveness of any options that may be available to manage that flow into the future.</p>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s04-resources-and-bathtub-behavior.html"><img src="shared/images/batch-left.png"></a> <a href="s04-resources-and-bathtub-behavior.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s06-building-and-managing-the-stra.html">Next Chapter</a> <a href="s06-building-and-managing-the-stra.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>
